@@ -6,28 +6,52 @@
     </div>
     <div class="questions">
       <div class="in">
-        <p>How is MAU calculated?</p>
-        <img src="~assets/images/black-arrow.svg" alt="">
+        <div class="price">
+          <p>How is MAU calculated?</p>
+          <img v-if="!selectIsMAU" src="~assets/images/black-arrow.svg" alt="" @click="showMAU">
+          <img v-if="selectIsMAU" src="~assets/images/upside-down arrow.svg" alt="" @click="showMAU">
+        </div>
+        <p v-if="selectIsMAU" class="in-content">Life may just be gucci who knows?</p>
       </div>
       <div class="in">
-        <p>What is the difference between Starter, Pro, and Enterprise plans?</p>
-        <img src="~assets/images/black-arrow.svg" alt="">        
+        <div class="price">
+          <p>What is the difference between Starter, Pro, and Enterprise plans?</p>
+          <img v-if="!selectIsPlan" src="~assets/images/black-arrow.svg" alt="" @click="showPlan">
+          <img v-if="selectIsPlan" src="~assets/images/upside-down arrow.svg" alt="" @click="showPlan">
+        </div>
+        <p v-if="selectIsPlan" class="in-content">Life would be good</p>        
       </div>
       <div class="in">
-        <p>How do I purchase higher levels of support?</p>
-        <img src="~assets/images/black-arrow.svg" alt="">
+        <div class="price">
+          <p>What happens if I hit my MAU limit??</p>
+          <img v-if="!selectIsIf" src="~assets/images/black-arrow.svg" alt="" @click="showIf">
+          <img v-if="selectIsIf" src="~assets/images/upside-down arrow.svg" alt="" @click="showIf">
+        </div>
+        <p v-if="selectIsIf" class="in-content">Life is for the living</p>
       </div>
       <div class="in">
-        <p>What other limits do I need to be aware of?</p>
-        <img src="~assets/images/black-arrow.svg" alt="">
+        <div class="price">
+          <p>How do I purchase higher levels of support?</p>
+          <img v-if="!selectIsSupport" src="~assets/images/black-arrow.svg" alt="" @click="showSupport">
+          <img v-if="selectIsSupport" src="~assets/images/upside-down arrow.svg" alt="" @click="showSupport">
+        </div>
+        <p v-if="selectIsSupport" class="in-content">Life is calm</p>
       </div>
       <div class="in">
-        <p>Is every feature automatically included in the enterprise plan?</p>
-        <img src="~assets/images/black-arrow.svg" alt="">
+        <div class="price">
+          <p>What other limits do I need to be aware of?</p>
+          <img v-if="!selectIsLimit" src="~assets/images/black-arrow.svg" alt="" @click="showLimit">
+          <img v-if="selectIsLimit" src="~assets/images/upside-down arrow.svg" alt="" @click="showLimit">
+        </div>
+        <p v-if="selectIsLimit" class="in-content">Life is gucci</p>
       </div>
       <div class="in">
-        <p>Do the prices listed on the pricing page include tax?</p>
-        <img src="~assets/images/black-arrow.svg" alt="">
+        <div class="price">
+          <p>Do the prices listed on the pricing page include tax?</p>
+          <img v-if="!selectIsShow" src="~assets/images/black-arrow.svg" alt="" @click="showOption">
+          <img v-if="selectIsShow" src="~assets/images/upside-down arrow.svg" alt="" @click="showOption">
+        </div>
+        <p v-if="selectIsShow" class="in-content">Tax is not included in the prices listed on the pricing page. Tax will be included in your billing receipts.</p>
       </div>
     </div>
       <div class="section2">
@@ -43,7 +67,37 @@
 
 <script>
   export default {
-    name: "FaQ"
+    name: "FaQ",
+    data (){
+      return{
+        selectIsShow: false,
+        selectIsLimit: false,
+        selectIsSupport: false,
+        selectIsIf: false,
+        selectIsPlan: false,
+        selectIsMAU: false,
+      }
+    },
+    methods: {
+      showOption () {
+      this.selectIsShow = !this.selectIsShow
+    },
+    showLimit () {
+      this.selectIsLimit = !this.selectIsLimit
+    },
+    showSupport () {
+      this.selectIsSupport = !this.selectIsSupport
+    },
+    showIf () {
+      this.selectIsIf = !this.selectIsIf
+    },
+    showPlan () {
+      this.selectIsPlan = !this.selectIsPlan
+    },
+    showMAU () {
+      this.selectIsMAU = !this.selectIsMAU
+    }
+    }
   }
 </script>
 
@@ -84,11 +138,13 @@ display: flex;
   align-items: center;
 }
 .in{
-  display: flex;
-  justify-content: space-between;
   padding: 1.7rem 2.4rem 2.2rem 3.1rem;
   background-color: #fff;
   margin-bottom: 1.3rem;
+}
+.price{
+  display: flex;
+  justify-content: space-between;
 }
 .in p{
   font-size: 20px;
@@ -96,6 +152,9 @@ display: flex;
 }
 .in img{
   cursor: pointer;
+}
+.in-content{
+  margin-top: 1.8rem;
 }
 .section2 p:first-child{
   font-size: 17px;

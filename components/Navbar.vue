@@ -37,6 +37,7 @@
 .nav__bar{
   display: flex;
   align-items: center;
+  justify-content: space-between;
   /* width: 100%; */
   padding: 1.5rem;
   z-index: 2;

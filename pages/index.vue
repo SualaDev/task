@@ -31,7 +31,7 @@
   <img src="~assets/images/robin.svg" alt="">
 </div>
 </div>
-<!-- <Bottom/> -->
+<Bottom/>
 </div>
 </template>
 
@@ -68,14 +68,14 @@ export default {
 }
 
 .left{
-  flex: .6;
+  flex: .9;
   /* border: 1px solid black; */
   margin-left: 8.5rem;
   margin-top: 3rem;
 }
 
 .right{
-  flex: .4;
+  flex: .1;
 }
 .trial{
   display: flex;

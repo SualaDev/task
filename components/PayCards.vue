@@ -141,16 +141,19 @@
 <style scoped>
 .paycard{
   display: flex;
-   /* border: 1px solid black; */
    margin: 5rem auto;
-   width: 80%;
+   width: 90%;
    justify-content: space-between;
+   flex-wrap: wrap;
 }
 
 .childcard{
   border: 1px solid #4568D1;
   background-color: #F5F7FC;
   padding: 2.25rem 1.6rem 2.4rem 0.8rem;
+  /* margin-right: 2%; */
+  margin-top: 1rem;
+  flex-basis: 20%;
   /* margin: .5rem; */
   border-radius: 1rem;
 }

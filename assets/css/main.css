@@ -1,6 +1,8 @@
-*{
-  margin: 0;
+@font-face {
+  font-family: 'ProductSans';
+  src: url(../fonts/ProductSans-Regular.ttf)format('ttf');
 }
-html{
-  z-index: 2;
+*{
+  font-family: 'ProductSans', sans-serif;
+  margin: 0;
 }
