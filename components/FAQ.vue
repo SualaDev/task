@@ -5,53 +5,13 @@
     <p>Ship in-app chat messaging with all the features your users expect.</p>
     </div>
     <div class="questions">
-      <div class="in">
+      <div v-for="faq in faqs" :key="faq.title" class="in">
         <div class="price">
-          <p>How is MAU calculated?</p>
-          <img v-if="!selectIsMAU" src="~assets/images/black-arrow.svg" alt="" @click="showMAU">
-          <img v-if="selectIsMAU" src="~assets/images/upside-down arrow.svg" alt="" @click="showMAU">
+          <p> {{ faq.content }}</p>
+          <img v-if="!faq.visible" src="~assets/images/black-arrow.svg" alt="" @click="toogleElementVisibility(faq)">
+          <img v-if="faq.visible" src="~assets/images/upside-down arrow.svg" alt="" @click="toogleElementVisibility(faq)">
         </div>
-        <p v-if="selectIsMAU" class="in-content">Life may just be gucci who knows?</p>
-      </div>
-      <div class="in">
-        <div class="price">
-          <p>What is the difference between Starter, Pro, and Enterprise plans?</p>
-          <img v-if="!selectIsPlan" src="~assets/images/black-arrow.svg" alt="" @click="showPlan">
-          <img v-if="selectIsPlan" src="~assets/images/upside-down arrow.svg" alt="" @click="showPlan">
-        </div>
-        <p v-if="selectIsPlan" class="in-content">Life would be good</p>        
-      </div>
-      <div class="in">
-        <div class="price">
-          <p>What happens if I hit my MAU limit??</p>
-          <img v-if="!selectIsIf" src="~assets/images/black-arrow.svg" alt="" @click="showIf">
-          <img v-if="selectIsIf" src="~assets/images/upside-down arrow.svg" alt="" @click="showIf">
-        </div>
-        <p v-if="selectIsIf" class="in-content">Life is for the living</p>
-      </div>
-      <div class="in">
-        <div class="price">
-          <p>How do I purchase higher levels of support?</p>
-          <img v-if="!selectIsSupport" src="~assets/images/black-arrow.svg" alt="" @click="showSupport">
-          <img v-if="selectIsSupport" src="~assets/images/upside-down arrow.svg" alt="" @click="showSupport">
-        </div>
-        <p v-if="selectIsSupport" class="in-content">Life is calm</p>
-      </div>
-      <div class="in">
-        <div class="price">
-          <p>What other limits do I need to be aware of?</p>
-          <img v-if="!selectIsLimit" src="~assets/images/black-arrow.svg" alt="" @click="showLimit">
-          <img v-if="selectIsLimit" src="~assets/images/upside-down arrow.svg" alt="" @click="showLimit">
-        </div>
-        <p v-if="selectIsLimit" class="in-content">Life is gucci</p>
-      </div>
-      <div class="in">
-        <div class="price">
-          <p>Do the prices listed on the pricing page include tax?</p>
-          <img v-if="!selectIsShow" src="~assets/images/black-arrow.svg" alt="" @click="showOption">
-          <img v-if="selectIsShow" src="~assets/images/upside-down arrow.svg" alt="" @click="showOption">
-        </div>
-        <p v-if="selectIsShow" class="in-content">Tax is not included in the prices listed on the pricing page. Tax will be included in your billing receipts.</p>
+        <p v-if="faq.visible" class="in-content">{{ faq.details }}</p>
       </div>
     </div>
       <div class="section2">
@@ -70,32 +30,20 @@
     name: "FaQ",
     data (){
       return{
-        selectIsShow: false,
-        selectIsLimit: false,
-        selectIsSupport: false,
-        selectIsIf: false,
-        selectIsPlan: false,
-        selectIsMAU: false,
+        visible: false,
+        faqs: [
+          {title:"1", content:"How is MAU calculated?", visible: false, details: "Life may just be gucci who knows?"},
+          {title:"2", content:"What is the difference between Starter, Pro, and Enterprise plans?", visible: false, details: "Life would be good"},
+          {title:"3", content:"What happens if I hit my MAU limit?", visible: false, details: "Life is for the living"},
+          {title:"4", content:"How do I purchase higher levels of support?", visible: false, details: "Life is calm"},
+          {title:"5", content:"What other limits do I need to be aware of?", visible: false, details: "Life is gucci"},
+          {title:"6", content:"Do the prices listed on the pricing page include tax?", visible: false, details: "Tax is not included in the prices listed on the pricing page. Tax will be included in your billing receipts."}
+        ]
       }
     },
     methods: {
-      showOption () {
-      this.selectIsShow = !this.selectIsShow
-    },
-    showLimit () {
-      this.selectIsLimit = !this.selectIsLimit
-    },
-    showSupport () {
-      this.selectIsSupport = !this.selectIsSupport
-    },
-    showIf () {
-      this.selectIsIf = !this.selectIsIf
-    },
-    showPlan () {
-      this.selectIsPlan = !this.selectIsPlan
-    },
-    showMAU () {
-      this.selectIsMAU = !this.selectIsMAU
+    toogleElementVisibility(faq) {  
+      faq.visible = !faq.visible
     }
     }
   }
@@ -155,6 +103,9 @@ display: flex;
 }
 .in-content{
   margin-top: 1.8rem;
+  opacity: .5;
+  font-size: 19px;
+  font-weight: 400;
 }
 .section2 p:first-child{
   font-size: 17px;
