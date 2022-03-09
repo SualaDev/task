@@ -5,12 +5,12 @@
         <img src="~assets/images/logo.svg" alt="">
       </div>
       <div class="main">
-      <li>Pricing</li>
-      <li>Docs</li>
-      <li>Use Cases</li>
-      <li>SDKs</li>
-      <li>Enterprise</li>
-      <li>Try Demo</li> 
+      <NuxtLink to="/">Pricing</NuxtLink>
+      <NuxtLink to="/docs">Docs</NuxtLink>
+      <NuxtLink to="/use">Use Cases</NuxtLink>
+      <NuxtLink to="/sdk">SDKs</NuxtLink>
+      <NuxtLink to="/">Enterprise</NuxtLink>
+      <NuxtLink to="/">Try Demo</NuxtLink> 
       </div>
       <div class="action">
         <li>Sign In</li>
@@ -42,7 +42,11 @@
   padding: 1.5rem;
   z-index: 2;
 }
-
+a{
+  text-decoration: none;
+  color: #808080e3;
+  font-weight: 700;
+}
 ul {
   list-style-type: none;
   display: flex;

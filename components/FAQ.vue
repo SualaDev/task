@@ -8,7 +8,7 @@
       <div v-for="faq in faqs" :key="faq.title" class="in">
         <div class="price">
           <p> {{ faq.content }}</p>
-          <img v-if="!faq.visible" src="~assets/images/black-arrow.svg" alt="" @click="toogleElementVisibility(faq)">
+          <img v-if="!faq.visible" src="~assets/images/downward-up.svg" alt="" @click="toogleElementVisibility(faq)">
           <img v-if="faq.visible" src="~assets/images/upside-down arrow.svg" alt="" @click="toogleElementVisibility(faq)">
         </div>
         <p v-if="faq.visible" class="in-content">{{ faq.details }}</p>

@@ -1,0 +1,203 @@
+<template>
+  <div class="container">
+    <div class="background">
+      <Navbar/>
+    <div class="text">
+      <p>RobinChat Use Cases</p>
+      <p>Teams of all sizes trust the Robin Chat API for building in-app messaging without the headache of implementing complex features with the scalability </p>
+    </div>
+    <div class="cards-container">
+      <div class="first-cards">
+      <div>
+        <img src="~assets/images/chat.svg" alt="">
+        <p>Social Community</p>
+        <p>Keep users hooked on your platform by allowing them create realistic experiences through engaging live streams with our live chat features.</p>
+        <div class="learn">
+          <p>Learn More</p>
+          <img src="~assets/images/use-arrow.svg" alt="">
+        </div>
+      </div>
+      <div class="notification">
+        <img src="~assets/images/megaphone.svg" alt="">
+        <p>Marketing & Sales</p>
+        <p>Create interaction between buyers and sellers in real-time to boost sales and customer services with Robin in-app chat features.</p>
+        <div class="learn">
+          <p>Learn More</p>
+          <img src="~assets/images/use-arrow.svg" alt="">
+        </div>
+      </div>
+      <div>
+        <img src="~assets/images/pagepen.svg" alt="">
+        <p>Education</p>
+        <p>Set up unlimited remote learning experiences. Create virtual class-rooms and connect teachers, trainers, students and parents.</p>
+        <div class="learn">
+          <p>Learn More</p>
+          <img src="~assets/images/use-arrow.svg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="second-cards">
+      <div class="gaming">
+        <img src="~assets/images/xbox_controller.svg" alt="">
+        <p>Gaming</p>
+        <p>Integrate in-app messaging and create immersive gaming experiences for your gamers.</p>
+        <div class="learn">
+          <p>Learn More</p>
+          <img src="~assets/images/use-arrow.svg" alt="">
+        </div>
+      </div>
+      <div class="live">
+        <img src="~assets/images/youtube.svg" alt="">
+        <p>Live Streaming</p>
+        <p>Enable chat for a more fan-tastic viewing experience that drives engagement and increases your app stickiness.</p>
+        <div class="learn">
+          <p>Learn More</p>
+          <img src="~assets/images/use-arrow.svg" alt="">
+        </div>
+      </div>
+      <div class="retail">
+        <img src="~assets/images/shopping.svg" alt="">
+        <p>Retail & E-commerce</p>
+        <p>Keep users hooked on your platform by allowing them create realistic experiences through engaging live streams with our live chat features.</p>
+        <div class="learn">
+          <p>Learn More</p>
+          <img src="~assets/images/use-arrow.svg" alt="">
+        </div>
+    </div>
+    </div>
+    </div>
+    <button class="use">
+      <p>Other Use Cases</p>
+    </button>
+    </div>
+    <div>
+      <Robin/>
+    </div>
+    <div>
+      <Footer/>
+    </div>
+  </div>
+</template>
+
+<script>
+  export default {
+    name:"UseCase"
+  }
+</script>
+
+<style scoped>
+.background{
+  background-image: url('~assets/images/ColourfulBG.svg');
+  background-size: 100%;
+}
+.text{
+  margin: 5rem auto 0 auto;
+  text-align: center;
+}
+.text p:first-child{
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+.text p:nth-child(2){
+  margin: 2rem auto;
+  max-width: 33.9rem;
+  opacity: .8;
+  font-size: 17px;
+  line-height: 2.1rem;
+}
+.cards-container{
+  margin: 0 5rem;
+}
+.first-cards{
+  display: flex;
+}
+.first-cards p:nth-child(2){
+  margin: 1rem 0;
+  font-size: 28px;
+  font-weight: bold;
+  font-weight: 700;
+}
+.first-cards p:nth-child(3){
+  opacity: .8;
+  font-size: 19px;
+  font-weight: 400;
+  min-width: 18.6rem;
+  line-height: 1.8rem;
+}
+.first-cards div{
+  min-width: 30%;
+  margin: 2rem;
+  /* padding: 1.9rem 0 1.6rem 3.6rem; */
+}
+.notification,.gaming,.retail{
+  box-shadow: 0px 15px 20px 10px rgba(69, 104, 209, 0.06);
+  border-radius: 8px;
+  opacity: 0.9;
+  /* padding: 1.9rem 4.7rem 3.6rem 3.5rem; */
+}
+.second-cards{
+  display: flex;
+}
+.second-cards p:nth-child(2){
+  margin: 1rem 0;
+  font-size: 28px;
+  font-weight: bold;
+  font-weight: 700;
+}
+.second-cards p:nth-child(3){
+  opacity: .8;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 1.8rem;
+}
+.second-cards div{
+  width: 30%;
+  margin: 2rem;
+}
+.learn{
+  display: flex;
+  margin: 2rem 0 !important;
+  /* padding: 0 !important; */
+}
+.learn p{
+  margin-right: .6rem;
+}
+.gaming img:nth-child(1){
+  margin-top: 1.2rem;
+}
+.gaming p:nth-child(2){
+  margin-top: 1.5rem;
+}
+.use{
+  margin: 3.5rem 45% 5rem 45%;
+  background-color: #4568D1;
+  color: #FFFFFF;
+  padding: 1rem;
+  border-radius: 30.5px;
+  border: none;
+  cursor: pointer;
+}
+.sdk{
+  background-color: #102a7944;
+  margin: 4rem 1rem 1.3rem 1rem;
+  border-radius: 25px;
+  padding: 2.5rem 6rem 3rem 6rem;
+}
+.sdk p:nth-child(1){
+  text-align: center;
+  font-weight: 700;
+  font-size: 28px;
+}
+.sdk p:nth-child(2){
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+}
+.btn-container {
+  display: flex;
+  /* justify-content: space-between; */
+  padding: 0.9rem 24.6rem;
+  /* width: 25.8rem; */
+}
+</style>
