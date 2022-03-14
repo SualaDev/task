@@ -3,12 +3,12 @@
     <div class="background">
       <Navbar/>
     <div class="text">
-      <p>RobinChat Use Cases</p>
-      <p>Teams of all sizes trust the Robin Chat API for building in-app messaging without the headache of implementing complex features with the scalability </p>
+      <p class="title">RobinChat Use Cases</p>
+      <p class="we">Teams of all sizes trust the Robin Chat API for building in-app messaging without the headache of implementing complex features with the scalability </p>
     </div>
-    <div class="cards-container">
+    <div class="padding-container">
       <div class="first-cards">
-      <div>
+      <div class="social">
         <img src="~assets/images/chat.svg" alt="">
         <p>Social Community</p>
         <p>Keep users hooked on your platform by allowing them create realistic experiences through engaging live streams with our live chat features.</p>
@@ -26,7 +26,7 @@
           <img src="~assets/images/use-arrow.svg" alt="">
         </div>
       </div>
-      <div>
+      <div class="education">
         <img src="~assets/images/pagepen.svg" alt="">
         <p>Education</p>
         <p>Set up unlimited remote learning experiences. Create virtual class-rooms and connect teachers, trainers, students and parents.</p>
@@ -106,11 +106,24 @@
   font-size: 17px;
   line-height: 2.1rem;
 }
-.cards-container{
-  margin: 0 5rem;
+.padding-container{
+  margin: 0 2rem;
 }
 .first-cards{
   display: flex;
+  margin-bottom: 1rem;
+}
+.social,.notification,.education{
+  padding: 1.9rem 4.7rem 3.6rem 3.5rem;
+}
+.gaming{
+  padding: 2.6rem 4.7rem 3.6rem 3.5rem;
+}
+.retail{
+  padding: 1.9rem 2.7rem 3.6rem 1.5rem;
+}
+.live{
+  padding: 1.9rem 4.6rem 3.5rem 3.5rem;
 }
 .first-cards p:nth-child(2){
   margin: 1rem 0;
@@ -125,16 +138,10 @@
   min-width: 18.6rem;
   line-height: 1.8rem;
 }
-.first-cards div{
-  min-width: 30%;
-  margin: 2rem;
-  /* padding: 1.9rem 0 1.6rem 3.6rem; */
-}
 .notification,.gaming,.retail{
   box-shadow: 0px 15px 20px 10px rgba(69, 104, 209, 0.06);
   border-radius: 8px;
   opacity: 0.9;
-  /* padding: 1.9rem 4.7rem 3.6rem 3.5rem; */
 }
 .second-cards{
   display: flex;
@@ -150,10 +157,7 @@
   font-size: 19px;
   font-weight: 400;
   line-height: 1.8rem;
-}
-.second-cards div{
-  width: 30%;
-  margin: 2rem;
+  min-width: 18.6rem;
 }
 .learn{
   display: flex;

@@ -45,7 +45,8 @@
 <style scoped>
 .container{
   /* width: 15%; */
-  margin: 3.7rem 5.1rem 0 4.9rem;
+  margin: 3.7rem 5.1rem 0 2.9rem;
+  width: 14.5rem;
 }
 .flutter{
   display: flex;
@@ -53,11 +54,14 @@
   border: 1px solid #566BA0;
   align-items: center;
   margin-bottom: 3.3rem;
+  padding: 1rem 1.7rem 1.1rem 0.8rem;
+  width: 16.2rem;
 }
 .cards-container p:first-child{
   text-transform: uppercase;
   color: #808080e3;
   font-weight: 700;
+  opacity: .5;
 }
 .cards-container p{
   font-size: 17px;

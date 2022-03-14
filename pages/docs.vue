@@ -4,8 +4,8 @@
       <Navbar/>
     <div class="docs-container">
       <div class="robin">
-        <p>RobinChat Docs</p>
-        <p>Teams of all sizes trust the Robin Chat API for building in-app messaging without the headache of implementing complex features with the scalability </p>
+        <p class="title">RobinChat Docs</p>
+        <p class="we">Teams of all sizes trust the Robin Chat API for building in-app messaging without the headache of implementing complex features with the scalability </p>
       </div>
       <div>
         <img src="~assets/images/code.svg" alt="">
@@ -85,6 +85,7 @@
   font-size: 13px;
   margin-bottom: 1.75rem;
   font-weight: bold;
+  opacity: .3;
 }
 .api{
   margin-left: 5.4rem;
@@ -95,6 +96,7 @@
   color: #808080;
   font-weight: bold;
   margin-bottom: 2.3rem;
+  opacity: .3;
 }
 .api-container{
   border: 1px solid #EBEBEB;

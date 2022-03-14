@@ -2,7 +2,51 @@
   font-family: 'ProductSans';
   src: url(../fonts/ProductSans-Regular.ttf)format('ttf');
 }
+@font-face {
+  font-family: "Hanken Sans";
+  src: url("../fonts/HankenSans-Black.otf"); 
+  src: url("../fonts/HankenSans-Black.otf") format("embedded-opentype"),
+  url("../fonts/HankenSans-Black.otf") format("truetype");
+  font-weight: bolder;
+}
+
+@font-face {
+  font-family: "Hanken Sans B";
+  src: url("../fonts/HankenSans-Bold.otf"); 
+  src: url("../fonts/HankenSans-Bold.otf") format("embedded-opentype"),
+  url("../fonts/HankenSans-Bold.otf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Hanken Sans M";
+  src: url("../fonts/HankenSans-Medium.otf"); 
+  src: url("../fonts/HankenSans-Medium.otf") format("embedded-opentype"),
+  url("../fonts/HankenSans-Medium.otf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Hanken Sans R";
+  src: url("../fonts/HankenSans-Regular.otf"); 
+  src: url("../fonts/HankenSans-Regular.otf") format("embedded-opentype"),
+  url("../fonts/HankenSans-Regular.otf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Hanken Sans L";
+  src: url("../fonts/HankenSans-Light.otf"); 
+  src: url("../fonts/HankenSans-Light.otf") format("embedded-opentype"),
+  url("../fonts/HankenSans-Light.otf") format("truetype");
+  font-weight: lighter;
+}
 *{
-  font-family: 'ProductSans', sans-serif;
   margin: 0;
+}
+.nav__bar,.title,.action,.trusted,.common,.price,.got,.contact,.left,.ready,.button,.second-segment,.d,.frontend,.a,.read,.cards-container,.about,.note,.re,.sa,.se,.robin{
+  font-family: 'Hanken Sans B', sans-serif ;
+}
+.paycard,.sub__title,.ship,.in-content,.we,.fourth-section,.p,.flutter,.through,.android,.dart,.requirements,.sample,.server,.previous,.next{
+  font-family: 'Hanken Sans R', sans-serif ;
 }

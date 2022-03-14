@@ -1,8 +1,8 @@
 <template>
   <div class="question__container">
     <div class="section1">
-    <p>Commonly asked questions</p>
-    <p>Ship in-app chat messaging with all the features your users expect.</p>
+    <p class="common">Commonly asked questions</p>
+    <p class="ship">Ship in-app chat messaging with all the features your users expect.</p>
     </div>
     <div class="questions">
       <div v-for="faq in faqs" :key="faq.title" class="in">
@@ -15,8 +15,8 @@
       </div>
     </div>
       <div class="section2">
-      <p>Got additional questions? </p>
-      <p>We would love to have a chat with you.</p>
+      <p class="got">Got additional questions? </p>
+      <p class="we">We would love to have a chat with you.</p>
       <div class="contact">
         <div>Contact Support</div>
         <img src="~assets/images/blue-arrow.svg" alt="">
@@ -85,6 +85,9 @@ display: flex;
   flex-direction: column;
   align-items: center;
 }
+.ship{
+  opacity: .9;
+}
 .in{
   padding: 1.7rem 2.4rem 2.2rem 3.1rem;
   background-color: #fff;
@@ -103,7 +106,7 @@ display: flex;
 }
 .in-content{
   margin-top: 1.8rem;
-  opacity: .5;
+  opacity: .8;
   font-size: 19px;
   font-weight: 400;
 }

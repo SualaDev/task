@@ -9,29 +9,25 @@
         <div class="about">
           <p>Home / Frontend / Flutter</p>
           <p>About Flutter Chat SDK</p>
-          <p>Through our Chat SDK for Flutter, you can efficiently integrate real-time chat into your client app. On the client-side implementation, you can initialize, configure and build the chat with minimal effort. On the server-side, Sendbird ensures reliable infra-management services for your chat within the app. This and other pages in the Getting started provide the Chat SDK’s structure and installation steps, then goes through the preliminary steps of implementing the Chat SDK in your own project.</p>
+          <p class="through">Through our Chat SDK for Flutter, you can efficiently integrate real-time chat into your client app. On the client-side implementation, you can initialize, configure and build the chat with minimal effort. On the server-side, Sendbird ensures reliable infra-management services for your chat within the app. This and other pages in the Getting started provide the Chat SDK’s structure and installation steps, then goes through the preliminary steps of implementing the Chat SDK in your own project.</p>
         </div>
         <div class="note">
           <p><span class="n">Note:</span> Robin server supports Transport Layer Security (TLS) from versions 1.0 up to 1.3. For example, in the server regions where TLS 1.3 isn’t available, lower versions from 1.0 to 1.2 will be sequentially supported for secure data transmission.</p>
         </div>
         <div class="requirements">
-          <p>Requirements</p>
+          <p class="re">Requirements</p>
           <p>The minimum requirements for Chat SDK for Flutter are:</p>
         </div>
-        <ul>
-          <li>
-            <div>
-              <p>Android studio</p>
-            </div>
+        <ul class="list-container">
+          <li class="android">
+            <p>Android studio</p>
             <p>4.4 or later</p>        
           </li>
-          <li>
-            <div>
-              <p>Dart 2.10.4</p>
-            </div>
+          <li class="dart">
+            <p>Dart 2.10.4</p>
             <p>or later</p>        
           </li>
-          <li>
+          <li class="flutter">
             <div>
               <p>Flutter 1.22.0</p>
             </div>
@@ -39,7 +35,7 @@
           </li>
         </ul>
         <div class="sample">
-          <p>Try the sample app</p>
+          <p class="sa">Try the sample app</p>
           <p>Our sample app has the core features of the Chat SDK. Download the app from our GitHub repository to get an idea of what you can build with the actual SDK and start building in your project.</p> 
           <button class="download">
             <p>Download Now</p>
@@ -47,7 +43,7 @@
           </button>        
         </div>
         <div class="server">
-          <p>Connect to Robin server</p>
+          <p class="se">Connect to Robin server</p>
           <p>Our sample app has the core features of the Chat SDK. Download the app from our GitHub repository to get an idea of what you can build with the actual SDK and start building in your project.</p>
           <img src="~assets/images/code-2.svg" alt="">
         </div>
@@ -57,7 +53,7 @@
         <div class="sdk-container" >
           <div class="previous">
             <p class="p">Previous</p>
-            <div class="a">
+            <div class="ab">
               <img src="~assets/images/less-than.svg" alt="">
               <p>About Chat SDK</p>
             </div>
@@ -94,8 +90,7 @@ import Sidebar from '../components/Sidebar.vue'
   display: flex;
 }
 .main-section{
-  width: 75%;
-  margin: 4.4rem 0.5rem 0 4.8rem;
+  margin: 4.4rem 7.3rem 0 4.8rem;
 }
 .about p:first-child{
   text-transform: uppercase;
@@ -114,9 +109,13 @@ import Sidebar from '../components/Sidebar.vue'
   line-height: 2.6rem;
   margin-bottom: 3.3rem;
 }
+.through{
+  opacity: .9;
+}
 .note {
   background-color: #ECF0FA;
   margin-bottom: 2.8rem;
+  opacity: .8;
   /* border-bottom: 1px solid #808080e3; */
 }
 .note p{
@@ -154,6 +153,42 @@ import Sidebar from '../components/Sidebar.vue'
   font-weight: 400;
   line-height: 2.3rem;
   margin-bottom: 2rem;
+}
+.dart,.flutter,.android{
+  display: flex;
+}
+.android{
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+}
+.android p:first-child{
+  background-color: #ECF0FA;
+  padding: 3px 12px 3px 7px;
+  margin-right: 0.2rem;
+}
+.dart{
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+}
+.dart p:first-child{
+  background-color: #ECF0FA;
+  padding: 3px 9px 3px 7px;
+  margin-right: 0.2rem;
+}
+.flutter{
+  margin-bottom: 3.1rem;
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+}
+.flutter p:first-child{
+  background-color: #ECF0FA;
+  padding: 3px 8px 3px 7px;
+  margin-right: 0.2rem;
 }
 .download{
   border-radius: 1.9rem;
@@ -194,6 +229,7 @@ import Sidebar from '../components/Sidebar.vue'
   background-color: #ECF0FA;
   width: 46.2rem;
   margin-bottom: 4rem;
+  opacity: .7;
 }
 .robin p{
   padding: 1rem 4.5rem 1.1rem 2.2rem;
@@ -209,6 +245,7 @@ import Sidebar from '../components/Sidebar.vue'
   display: flex;
   margin-bottom: 8.5rem;
 }
+
 .previous{
   padding: 1.3rem 8.8rem 2.3rem 3.6rem;
   border-right: 1px solid #E3E3E3;
@@ -220,7 +257,7 @@ import Sidebar from '../components/Sidebar.vue'
 .next{
   padding: 1.3rem 7.5rem 2.3rem 3.4rem;
 }
-.a{
+.ab{
   width: 9.1rem;
   display: flex;
 }
@@ -231,7 +268,7 @@ import Sidebar from '../components/Sidebar.vue'
 .c p{
   margin-right: 1rem;
 }
-.a p{
+.ab p{
   margin-left: .8rem;
 }
 </style>

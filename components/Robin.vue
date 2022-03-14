@@ -2,8 +2,8 @@
   <div class="container">
     <div class="robin-container">
       <div class="robin">
-        <p>Start using Robin Chat SDKs</p>
-        <p>No matter what you're building, we can power it</p>
+        <p class="title">Start using Robin Chat SDKs</p>
+        <p class="we">No matter what you're building, we can power it</p>
       </div>
       <div class="btn-container">
         <button class="sales">
@@ -27,10 +27,10 @@
 
 <style scoped>
  .container{
-   margin: 0 1.3rem 2.4rem 1.1rem;
+   margin: 0 1rem 2.4rem 1rem;
  }
  .robin-container{
-   padding: 4.5rem 27.1rem 5rem 26.2rem;
+   padding: 4.5rem 31% 5rem 36%;
    border-radius: 1.5rem;
    background-color: #4568d13b;
  }

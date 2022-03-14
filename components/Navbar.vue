@@ -40,12 +40,12 @@
   justify-content: space-between;
   /* width: 100%; */
   padding: 1.5rem;
-  z-index: 2;
 }
 a{
   text-decoration: none;
-  color: #808080e3;
-  font-weight: 700;
+  color: #808080;
+  font-weight: 300;
+  line-height: 1rem;
 }
 ul {
   list-style-type: none;

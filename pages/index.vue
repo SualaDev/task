@@ -53,6 +53,8 @@ export default {
 .sub__title{
   /* text-align: center; */
   margin: 2rem auto;
+  line-height: 1.5rem;
+  font-size: 20px;
 }
 .headers{
   display: flex;
@@ -103,9 +105,10 @@ export default {
   font-size: 1.3rem;
   color: rgba(0, 0, 0, 0.685);
   margin-bottom: 4rem;
+  opacity: .9;
 }
 .g{
-  font-weight: 800;
+  font-weight: 900;
 }
 .demo{
   border: 1px solid #000000;
@@ -123,6 +126,7 @@ export default {
 .trusted p{
   text-align: center;
   color: #808080;
+  opacity: .5;
   
 }
 .trusted img{

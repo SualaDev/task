@@ -2,8 +2,8 @@
   <div class="container">
     <div class="parent">
       <div class="chat">
-        <p>Ready to have a chat?</p>
-        <p>We’d love to talk about your messaging strategy and help make your software more conversational.</p>
+        <p class="ready">Ready to have a chat?</p>
+        <p class="we">We’d love to talk about your messaging strategy and help make your software more conversational.</p>
       </div>
       <div class="button">
         <div class="sales">
@@ -94,6 +94,9 @@
   font-weight: 400;
   color: #808080;
   font-size: 1.25rem;
+}
+.we{
+  opacity: .8;
 }
 .btn{
   width: 207px;
