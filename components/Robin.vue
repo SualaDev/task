@@ -29,6 +29,9 @@
  .container{
    margin: 0 1rem 2.4rem 1rem;
  }
+ .title{
+   color: #071439;
+ }
  .robin-container{
    padding: 4.5rem 31% 5rem 36%;
    border-radius: 1.5rem;
