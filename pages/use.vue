@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="background">
-      <Navbar/>
+      <OtherNavbar/>
     <div class="text">
       <p class="title">RobinChat Use Cases</p>
       <p class="we">Teams of all sizes trust the Robin Chat API for building in-app messaging without the headache of implementing complex features with the scalability </p>

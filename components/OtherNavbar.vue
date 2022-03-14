@@ -1,0 +1,83 @@
+<template>
+  <div class="container">
+    <ul class="nav__bar">
+      <div class="logo__area">
+        <img src="~assets/images/logo.svg" alt="">
+      </div>
+      <div class="main">
+      <NuxtLink to="/">Pricing</NuxtLink>
+      <NuxtLink to="/docs">Docs</NuxtLink>
+      <NuxtLink to="/use">Use Cases</NuxtLink>
+      <NuxtLink to="/sdk">SDKs</NuxtLink>
+      <NuxtLink to="/">Enterprise</NuxtLink>
+      <NuxtLink to="/">Try Demo</NuxtLink> 
+      </div>
+      <div class="action">
+        <li>Sign In</li>
+        <div class="start">Get started</div>
+      </div>
+    </ul>
+  </div>
+</template>
+
+<script>
+  export default {
+    name: "NavBar",
+    layout: "MainLayout"
+  }
+</script>
+
+<style scoped>
+.nav__bar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* width: 100%; */
+  padding: 1.5rem;
+}
+a{
+  text-decoration: none;
+  color: #808080;
+  font-weight: 300;
+  line-height: 1rem;
+}
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+  .logo__area{
+    /* border: 1px solid black; */
+    flex: .2;
+  }
+
+.action{
+   /* border: 1px solid black; */
+   display: flex;
+   align-items: center;
+   flex: .2;
+   justify-content: space-evenly;
+   cursor: pointer;
+}
+
+.main{
+  display: flex;
+  flex: .6;
+  justify-content: space-around;
+  cursor: pointer;
+}
+li{
+  font-size: 14px;
+  color: #000000;
+}
+.start{
+  background-color: #476BD2;
+  color: white;
+  border-radius: 2rem;
+  padding: 1rem;
+}
+.action li{
+  color: #476BD2;
+}
+</style>

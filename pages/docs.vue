@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="background">
-      <Navbar/>
+      <OtherNavbar/>
     <div class="docs-container">
       <div class="robin">
         <p class="title">RobinChat Docs</p>

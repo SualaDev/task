@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <Navbar/>
+    <OtherNavbar/>
     <div class="comp-container">
       <div>
         <Sidebar/>
