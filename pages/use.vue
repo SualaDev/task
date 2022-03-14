@@ -10,8 +10,8 @@
       <div class="first-cards">
       <div class="social">
         <img src="~assets/images/chat.svg" alt="">
-        <p>Social Community</p>
-        <p>Keep users hooked on your platform by allowing them create realistic experiences through engaging live streams with our live chat features.</p>
+        <p class="title">Social Community</p>
+        <p class="we">Keep users hooked on your platform by allowing them create realistic experiences through engaging live streams with our live chat features.</p>
         <div class="learn">
           <p>Learn More</p>
           <img src="~assets/images/use-arrow.svg" alt="">
@@ -19,8 +19,8 @@
       </div>
       <div class="notification">
         <img src="~assets/images/megaphone.svg" alt="">
-        <p>Marketing & Sales</p>
-        <p>Create interaction between buyers and sellers in real-time to boost sales and customer services with Robin in-app chat features.</p>
+        <p class="title">Marketing & Sales</p>
+        <p class="we">Create interaction between buyers and sellers in real-time to boost sales and customer services with Robin in-app chat features.</p>
         <div class="learn">
           <p>Learn More</p>
           <img src="~assets/images/use-arrow.svg" alt="">
@@ -28,8 +28,8 @@
       </div>
       <div class="education">
         <img src="~assets/images/pagepen.svg" alt="">
-        <p>Education</p>
-        <p>Set up unlimited remote learning experiences. Create virtual class-rooms and connect teachers, trainers, students and parents.</p>
+        <p class="title">Education</p>
+        <p class="we">Set up unlimited remote learning experiences. Create virtual class-rooms and connect teachers, trainers, students and parents.</p>
         <div class="learn">
           <p>Learn More</p>
           <img src="~assets/images/use-arrow.svg" alt="">
@@ -39,8 +39,8 @@
     <div class="second-cards">
       <div class="gaming">
         <img src="~assets/images/xbox_controller.svg" alt="">
-        <p>Gaming</p>
-        <p>Integrate in-app messaging and create immersive gaming experiences for your gamers.</p>
+        <p class="title">Gaming</p>
+        <p class="we">Integrate in-app messaging and create immersive gaming experiences for your gamers.</p>
         <div class="learn">
           <p>Learn More</p>
           <img src="~assets/images/use-arrow.svg" alt="">
@@ -48,8 +48,8 @@
       </div>
       <div class="live">
         <img src="~assets/images/youtube.svg" alt="">
-        <p>Live Streaming</p>
-        <p>Enable chat for a more fan-tastic viewing experience that drives engagement and increases your app stickiness.</p>
+        <p class="title">Live Streaming</p>
+        <p class="we">Enable chat for a more fan-tastic viewing experience that drives engagement and increases your app stickiness.</p>
         <div class="learn">
           <p>Learn More</p>
           <img src="~assets/images/use-arrow.svg" alt="">
@@ -57,8 +57,8 @@
       </div>
       <div class="retail">
         <img src="~assets/images/shopping.svg" alt="">
-        <p>Retail & E-commerce</p>
-        <p>Keep users hooked on your platform by allowing them create realistic experiences through engaging live streams with our live chat features.</p>
+        <p class="title">Retail & E-commerce</p>
+        <p class="we">Keep users hooked on your platform by allowing them create realistic experiences through engaging live streams with our live chat features.</p>
         <div class="learn">
           <p>Learn More</p>
           <img src="~assets/images/use-arrow.svg" alt="">
