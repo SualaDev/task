@@ -1,5 +1,6 @@
 <template>
-  <div class="paycard">
+  <div class="paycard-container">
+    <div class="paycard">
     <!-- <div class="paycard"> -->
       <div class="childcard">
         <div class="first">
@@ -13,7 +14,7 @@
           </div>
           <div class="in">
             <img src="~assets/images/check.svg" alt="">
-            <p>10,000 Monthly Active Users</p>
+            <p><span class="a"> 10,000</span> Monthly Active Users</p>
           </div>
           <div class="in">
             <img src="~assets/images/check.svg" alt="">
@@ -21,7 +22,7 @@
           </div>         
           <div class="in">
             <img src="~assets/images/check.svg" alt="">
-            <p>100 Concurrent Included</p>
+            <p><span class="a"> 100</span> Concurrent Included</p>
           </div>          
           <div class="in">
             <img src="~assets/images/check.svg" alt="">
@@ -45,7 +46,7 @@
           </div>
           <div class="in">
             <img src="~assets/images/check.svg" alt="">
-            <p>25,000 Monthly Active Users</p>
+            <p><span class="a"> 25,000</span> Monthly Active Users</p>
           </div>
           <div class="in">
             <img src="~assets/images/check.svg" alt="">
@@ -53,7 +54,7 @@
           </div>         
           <div class="in">
             <img src="~assets/images/check.svg" alt="">
-            <p>100 Concurrent Included</p>
+            <p><span class="a"> 100</span> Concurrent Included</p>
           </div>          
           <div class="in">
             <img src="~assets/images/check.svg" alt="">
@@ -77,7 +78,7 @@
           </div>
           <div class="in">
             <img src="~assets/images/check.svg" alt="">
-            <p>50,000 Monthly Active Users</p>
+            <p><span class="a"> 50,000</span> Monthly Active Users</p>
           </div>
           <div class="in">
             <img src="~assets/images/check.svg" alt="">
@@ -85,7 +86,7 @@
           </div>         
           <div class="in">
             <img src="~assets/images/check.svg" alt="">
-            <p>100 Concurrent Included</p>
+            <p><span class="a"> 100</span> Concurrent Included</p>
           </div>          
           <div class="in">
             <img src="~assets/images/check.svg" alt="">
@@ -109,7 +110,7 @@
           </div>
           <div class="in">
             <img src="~assets/images/check.svg" alt="">
-            <p>100,000+ Monthly Active Users</p>
+            <p><span class="a"> 100,000+</span> Monthly Active Users</p>
           </div>
           <div class="in">
             <img src="~assets/images/check.svg" alt="">
@@ -117,7 +118,7 @@
           </div>         
           <div class="in">
             <img src="~assets/images/check.svg" alt="">
-            <p>100 Concurrent Included</p>
+            <p><span class="a"> 100</span> Concurrent Included</p>
           </div>          
           <div class="in">
             <img src="~assets/images/check.svg" alt="">
@@ -129,7 +130,8 @@
           <img src="~assets/images/blue-arrow.svg" alt="">
         </div>
       </div>
-      </div>
+  </div>
+  </div>
 </template>
 
 <script>
@@ -139,23 +141,28 @@
 </script>
 
 <style scoped>
+.paycard-container{
+  padding: 50px;
+}
 .paycard{
   display: flex;
-   margin: 5rem auto;
-   width: 90%;
-   justify-content: space-between;
-   flex-wrap: wrap;
+  /* margin: 91px 55px 132px 91px; */
+  /* min-width: 1294px; */
+  width: 100%;
+  justify-content: center;
+  /* flex-wrap: wrap; */
 }
 
 .childcard{
   border: 1px solid #4568D1;
   background-color: #F5F7FC;
-  padding: 2.25rem 1.6rem 2.4rem 0.8rem;
-  /* margin-right: 2%; */
-  margin-top: 1rem;
-  flex-basis: 20%;
-  /* margin: .5rem; */
+  padding: 20px;
+  flex-basis: 23%;
+  /* margin-top: 1rem; */
+  /* flex-basis: 18%; */
   border-radius: 1rem;
+  margin: 1%;
+  /* min-width: 310px; */
 }
 .first p:first-child{
   font-size: 1.1rem;
@@ -169,17 +176,19 @@
 }
 .first{
   padding-bottom: 1rem;
-  border-bottom: 1px solid #BBC1D6;
+  border-bottom: 1px solid rgb(128,128,128,.1)
 }
 .second{
   display: flex;
   flex-direction: column;
   padding-bottom: 3.3rem;
-  border-bottom: 1px solid #BBC1D6;
+  border-bottom: 1px solid rgb(128,128,128,.1)
 }
 .in{
   display: flex;
   padding-top: 1.1rem;
+  opacity: .8;
+  /* padding-bottom: 1.5rem; */
 }
 .in p{
   margin-left: 0.7rem;
@@ -200,4 +209,31 @@
 .started{
   cursor: pointer;
 }
+@media only screen and (max-width: 1300px){
+  .paycard{
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+}
+/* @media only screen and (max-width: 1920px){
+  .paycard{
+    width: 75%;
+  }
+}
+@media only screen and (max-width: 1450px){
+  .paycard{
+    width: 85%;
+  }
+}
+}
+@media only screen and (max-width: 800px){
+  .paycard{
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 500px){
+  .paycard{
+    width: 95%;
+  }
+} */
 </style>

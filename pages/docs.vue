@@ -62,11 +62,11 @@
   margin-bottom: 1.6rem;
 }
 .robin :nth-child(2){
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 400;
   max-width: 22rem;
   opacity: .8;
-  line-height: 1.5rem;
+  line-height: 25px;
 }
 .second-part{
   margin: 3.9rem 24.1rem 7.1rem 6.8rem;

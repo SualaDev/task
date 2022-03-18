@@ -10,7 +10,7 @@
       <p>Getting Started</p>
       <NuxtLink to = "/sdk" class="chat">
         <p>About Chat SDK</p>
-        <img src="~assets/images/black-arrow.svg" alt="">
+        <img src="~assets/images/light-blue.svg" alt="">
       </NuxtLink>
       <p>Installing Chat SDK</p>
       <p>Send First Message</p>
@@ -59,7 +59,7 @@
 }
 .cards-container p:first-child{
   text-transform: uppercase;
-  color: #808080e3;
+  /* color: #808080e3; */
   font-weight: 700;
   opacity: .5;
 }
@@ -76,10 +76,14 @@ a.nuxt-link-exact-active {
   display: flex;
   text-decoration: none;
   justify-content: space-between;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #566BA0;
 }
 .chat p{
   font-size: 17px;
   font-weight: 700;
-  color: #000 !important;
+  color: #304f9e !important;
+  opacity: none !important;
+  text-transform: none !important;
 }
 </style>

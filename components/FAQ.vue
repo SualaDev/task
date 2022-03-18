@@ -52,8 +52,7 @@
 <style scoped>
 .question__container{
   background-color: #F5F7FC;
-  width: 70%;
-  margin: 0 auto;
+  margin: 0 6.7rem 2.8rem 5.8rem;
   padding: 4rem;
   border-radius: 15px;
   

@@ -4,7 +4,7 @@
   <Navbar/>
   </div>
   <div class="headers">
-  <p class="title">Simple & Transparent Pricing. No surprises.</p>
+  <p class="title">Simple &amp; Transparent Pricing. No surprises.</p>
   <p class="sub__title">The only tool you will need to power conversations. </p>
   <div class="trial">
     <div class="action">Start Free Trial</div>
@@ -20,8 +20,8 @@
 <div class="chat">
 <div class="left">
   <p>CHAT</p>
-  <p>See the all-in-one chat system in action</p>
-  <p>The only tool you will need to power conversations and interactions on your product.<span class="g">Go live within days.</span></p>
+  <p class="al">See the all-in-one chat system in action</p>
+  <p class="th">The only tool you will need to power conversations and interactions on your product.<span class="g">Go live within days.</span></p>
   <div class="demo">
   <div>Start Demo</div>
   <img src="~assets/images/arrow-2.svg" alt="">
@@ -65,8 +65,9 @@ export default {
 .chat{
   display: flex;
   /* padding: 9rem; */
-  width: 100%;
+  /* width: 100%; */
   margin-top: 5rem;
+  /* margin-left: 7.6rem; */
 }
 
 .left{
@@ -92,11 +93,12 @@ export default {
 .left p:first-child{
   color: #808080;
   margin-bottom: 1.5rem;
+  opacity: .4;
 }
 .left p:nth-child(2){
   font-size: 35px;
   font-weight: 700;
-  max-width: 20rem;
+  width: 20rem;
   margin-bottom: 2.5rem;
 }
 .left p:nth-child(3){
@@ -123,6 +125,9 @@ export default {
   font-weight: 700;
   cursor: pointer;
 }
+.trusted{
+  margin: 0 13.8rem 4.9rem 13rem;
+}
 .trusted p{
   text-align: center;
   color: #808080;
@@ -130,7 +135,6 @@ export default {
   
 }
 .trusted img{
- margin: 0 13.8rem 4.9rem 13rem;
- width: 65%;
+ width: 90%;
 }
 </style>

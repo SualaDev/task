@@ -195,7 +195,7 @@ import Sidebar from '../components/Sidebar.vue'
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #4568d18c;
+  background-color: #4568d121;
   width: 15rem;
   padding: 1rem 1.5rem;
   border: none;

@@ -8,7 +8,7 @@
     </div>
     <div class="padding-container">
       <div class="first-cards">
-      <div class="social">
+      <div class="social card">
         <img src="~assets/images/chat.svg" alt="">
         <p class="title">Social Community</p>
         <p class="we">Keep users hooked on your platform by allowing them create realistic experiences through engaging live streams with our live chat features.</p>
@@ -17,7 +17,7 @@
           <img src="~assets/images/use-arrow.svg" alt="">
         </div>
       </div>
-      <div class="notification">
+      <div class="notification card">
         <img src="~assets/images/megaphone.svg" alt="">
         <p class="title">Marketing & Sales</p>
         <p class="we">Create interaction between buyers and sellers in real-time to boost sales and customer services with Robin in-app chat features.</p>
@@ -26,7 +26,7 @@
           <img src="~assets/images/use-arrow.svg" alt="">
         </div>
       </div>
-      <div class="education">
+      <div class="education card">
         <img src="~assets/images/pagepen.svg" alt="">
         <p class="title">Education</p>
         <p class="we">Set up unlimited remote learning experiences. Create virtual class-rooms and connect teachers, trainers, students and parents.</p>
@@ -37,7 +37,7 @@
       </div>
     </div>
     <div class="second-cards">
-      <div class="gaming">
+      <div class="gaming card">
         <img src="~assets/images/xbox_controller.svg" alt="">
         <p class="title">Gaming</p>
         <p class="we">Integrate in-app messaging and create immersive gaming experiences for your gamers.</p>
@@ -46,7 +46,7 @@
           <img src="~assets/images/use-arrow.svg" alt="">
         </div>
       </div>
-      <div class="live">
+      <div class="live card">
         <img src="~assets/images/youtube.svg" alt="">
         <p class="title">Live Streaming</p>
         <p class="we">Enable chat for a more fan-tastic viewing experience that drives engagement and increases your app stickiness.</p>
@@ -55,7 +55,7 @@
           <img src="~assets/images/use-arrow.svg" alt="">
         </div>
       </div>
-      <div class="retail">
+      <div class="retail card">
         <img src="~assets/images/shopping.svg" alt="">
         <p class="title">Retail & E-commerce</p>
         <p class="we">Keep users hooked on your platform by allowing them create realistic experiences through engaging live streams with our live chat features.</p>
@@ -107,13 +107,20 @@
   line-height: 2.1rem;
 }
 .padding-container{
-  margin: 0 2rem;
+  margin: 0 auto;
+  width: 100%;
 }
 .first-cards{
   display: flex;
   margin-bottom: 1rem;
+  justify-content: center;
+  width: 100%;
 }
-.social,.notification,.education{
+.card{
+  flex-basis: 30%;
+  padding: 1.9rem 4.7rem 3.6rem 3.5rem;
+}
+/* .social,.notification,.education{
   padding: 1.9rem 4.7rem 3.6rem 3.5rem;
 }
 .gaming{
@@ -124,7 +131,7 @@
 }
 .live{
   padding: 1.9rem 4.6rem 3.5rem 3.5rem;
-}
+} */
 .first-cards p:nth-child(2){
   margin: 1rem 0;
   font-size: 28px;
@@ -145,6 +152,8 @@
 }
 .second-cards{
   display: flex;
+  justify-content: center;
+  width: 100%;
 }
 .second-cards p:nth-child(2){
   margin: 1rem 0;

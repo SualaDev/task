@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'ProductSans';
-  src: url(../fonts/ProductSans-Regular.ttf)format('ttf');
+  font-family: 'ZonaPro B';
+  src: url("../fonts/ZonaPro-Bold.otf")format('ttf');
 }
 @font-face {
   font-family: "Hanken Sans";
@@ -44,9 +44,12 @@
 *{
   margin: 0;
 }
-.nav__bar,.title,.action,.trusted,.common,.price,.got,.contact,.left,.ready,.button,.second-segment,.d,.frontend,.a,.read,.cards-container,.about,.note,.re,.sa,.se,.robin,.learn,.use{
+.nav__bar,.title,.action,.trusted,.common,.price,.got,.contact,.left,.ready,.button,.second-segment,.d,.frontend,.a,.read,.cards-container,.about,.note,.re,.sa,.se,.robin,.learn,.use,.started,.g{
   font-family: 'Hanken Sans B', sans-serif ;
 }
-.paycard,.sub__title,.ship,.in-content,.we,.fourth-section,.p,.flutter,.through,.android,.dart,.requirements,.sample,.server,.previous,.next{
+.paycard,.sub__title,.ship,.in-content,.we,.fourth-section,.p,.flutter,.through,.android,.dart,.requirements,.sample,.server,.previous,.next,.th{
   font-family: 'Hanken Sans R', sans-serif ;
+}
+.al{
+  font-family: 'ZonaPro B, sans-serif';
 }
